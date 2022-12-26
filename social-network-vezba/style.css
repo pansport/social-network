@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-wrapper {
+  border: 3px solid black;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form {
+  margin: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.login-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form div label {
+  font-size: 20px;
+}
+
+.login-form div input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 30px;
+}
+
+.login-form button {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 30px;
+}
+
+.no-acc-register {
+  border: 3px solid black;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, 0);
+  width: 700px;
+  padding: 20px;
+}
+
+.no-acc-register h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.no-acc-register button {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 30px;
+}
+
+.custom-modal {
+  display: none;
+  background-color: black;
+  box-shadow: rgba(255, 255, 255, 0.8) 0 0 1000px 1000px;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 50px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+
+.custom-modal button#closeModal {
+  height: 20px;
+  width: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+#registrationForm,
+#editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#registrationForm div:nth-child(5) {
+  margin-bottom: 20px;
+}
+
+#registrationForm div label,
+#editForm div label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#registrationForm div input,
+#editForm div input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#registrationForm button,
+#editForm button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 30px;
+}
+
+/**********************/
+/* SOCIAL MEDIA */
+/**********************/
+
+.container {
+  margin-top: 50px;
+}
+
+.inner-container {
+  border: 1px solid green;
+  padding: 15px;
+}
+
+.inner-container.left-side {
+  text-align: center;
+}
+
+.inner-container img.profile {
+  width: 70%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid white;
+  margin-bottom: 20px;
+}
+
+.inner-container.right-side form {
+  display: flex;
+  height: 100px;
+}
+
+.inner-container.right-side form textarea {
+  width: 85%;
+  border: 0;
+  padding: 10px;
+  resize: none;
+  outline-color: green;
+}
+
+.inner-container.right-side form button {
+  border: 0;
+  width: 15%;
+}
+
+#deleteProfile {
+  border: 2px solid red;
+  color: red;
+  padding: 5px 15px;
+}
+
+.allPostsWrapper .single-post {
+  background-color: #eaeaea;
+  padding: 15px;
+  margin-top: 15px;
+  color: #000;
+}
+
+.allPostsWrapper .single-post .post-content {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.allPostsWrapper .single-post .post-comments form {
+  height: 30px;
+  margin-top: 15px;
+}
+
+.allPostsWrapper .single-post .post-comments form input {
+  width: 85%;
+  padding: 0 10px;
+}
+
+.allPostsWrapper .single-post .post-comments form button {
+  width: 15%;
+  background-color: grey;
+}
